@@ -58,7 +58,7 @@ Viewing Jacoco Coverage Report
 
  1. excute a build - `mvn clean install`  
  2. navigate to ./target/site/jacoco/
- 3. open index.html
+ 3. open html report
 
 FAQ
 
@@ -66,9 +66,14 @@ FAQ
 	 - Edit application.properties inside src/main/resources and update the value to your liking
  
 BackLog Items for past POC
-Validation with OSWAP for input paramaters
-Switch to JSR 309 Validation annotations
-Hateoas Support- Really only at Level 2 [Richardson Maturity Model](http://restcookbook/Miscellaneous/richardsonmaturitymodel/) 
-Caching of Names from external source into more local cache
-Authorization for price update
-Internationalization (i18n) for currency and error messages
+- Create local setup script
+- Ability to request mutliple products at once
+- Add more logging with Logback
+- Validation with OSWAP for input paramaters
+- Switch to JSR 309 Validation annotations
+- Hateoas Support- Really only at Level 2 [Richardson Maturity Model](http://restcookbook/Miscellaneous/richardsonmaturitymodel/) 
+- Caching of Names from external source into more local cache
+- Authorization for price updates
+- Internationalization (i18n) for currency and error messages
+- Look at Spring Data's Cassandra Repo about Prepared Statement templates instead of manual
+- Update data model to allow for currency code that isn't only USD (The example only showed one result - and not an array of prices)
