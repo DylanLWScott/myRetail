@@ -65,3 +65,10 @@ FAQ
  - How do I change the properties being used?
 	 - Edit application.properties inside src/main/resources and update the value to your liking
  
+BackLog Items for past POC
+Validation with OSWAP for input paramaters
+Switch to JSR 309 Validation annotations
+Hateoas Support- Really only at Level 2 [Richardson Maturity Model](http://restcookbook/Miscellaneous/richardsonmaturitymodel/) 
+Caching of Names from external source into more local cache
+Authorization for price update
+Internationalization (i18n) for currency and error messages
