@@ -18,7 +18,15 @@ Workstation Setup
    3. Import the project in STS. 
 	   3. File -> Import -> Existing Maven Project
    4. Build the application
+   
+Database Setup
 
+   1. Install [Cassandra version 2.2.5](http://www.apache.org/dyn/closer.lua/cassandra/2.2.5/apache-cassandra-2.2.5-bin.tar.gz) and install
+   2. Go to the [data dir](https://github.com/DylanLWScott/myRetail/tree/master/src/main/java/com/myretail/data) to get the needed files 
+   3. Run the createkeyspace.cql
+   4. Run the creatreschema.cql
+   5. Run the following: COPY dylanmyretail.products (productid,price,currency_code) from 'productstoload.csv' with delimiter=';' and HEADER = TRUE;  You will have to use the file productstoload.csv location you placed it at.
+   
 Building the application
 
  - Within STS
